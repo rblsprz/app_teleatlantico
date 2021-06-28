@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment';
+import { environment } from '../../src/environments/environment';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
-import { Comment } from '../models/comment.model';
+import { Comment } from '../app/comment.model';
 import { tap, catchError, map } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 
