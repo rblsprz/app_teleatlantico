@@ -1,0 +1,67 @@
+<app-nav-bar></app-nav-bar>
+<div class="container mt-5">
+  <div class="card bg-light">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+      <h4 class="card-title mt-3 text-center">Support Request</h4>
+      <hr>
+      <form autocomplete="off" [formGroup]="issueForm" (ngSubmit)="registerIssue()">
+
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-info"></i> </span>
+          </div>
+          <input class="form-control" formControlName="reportNumber" type="text" readonly>
+        </div>
+
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> </span>
+          </div>
+          <input class="form-control" formControlName="address" type="text" readonly>
+        </div>
+
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-phone" aria-hidden="true"></i> </span>
+          </div>
+          <input class="form-control" formControlName="contactPhone" type="number" readonly>
+        </div>
+
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-envelope" aria-hidden="true"></i> </span>
+          </div>
+          <input class="form-control" formControlName="contactEmail" type="email" readonly>
+        </div>
+
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-text-width" aria-hidden="true"></i> </span>
+          </div>
+          <textarea [class.is-invalid]="valueNoValid('description')" formControlName="description" class="form-control"
+            placeholder="Descripción" type="text">
+
+                    </textarea>
+        </div>
+
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+            </span>
+          </div>
+          <select formControlName="service" class="custom-select">
+            <option value='0'>Choose an option</option>
+            <option *ngIf="client.telephone == 1" value="Telefonía fija">Telephone</option>
+            <option *ngIf="client.mobilePhone == 1" value="Telefonía móvil">Mobile Phone</option>
+            <option *ngIf="client.television == 1" value="Cable">Television</option>
+            <option *ngIf="client.internet == 1" value="Internet">Internet</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <button type="submit" class="btn btn-info btn-block">Request</button>
+        </div>
+      </form>
+    </article>
+  </div>
+</div>
