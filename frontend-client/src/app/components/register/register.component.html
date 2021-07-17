@@ -1,6 +1,6 @@
 <article class="mb-3" style="background-color: #C3EDE9;">
   <div class="card-body text-center">
-    <h3 class="text-white mt-3 blk"> Crear Cuenta </h3>
+    <h3 class="text-white mt-3 blk"> Sing up </h3>
   </div>
   <br><br>
 </article>
@@ -16,35 +16,35 @@
             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
           </div>
           <input id="name" class="form-control" formControlName="name" name=""
-            placeholder="Nombre *" type="text">
+            placeholder="Name *" type="text">
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
           </div>
           <input formControlName="firstsurname" id="firstsurname" name=""
-            class="form-control" placeholder="Primer Apellido *" type="text">
+            class="form-control" placeholder="Surname *" type="text">
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
           </div>
           <input formControlName="secondsurname" id="secondsurname"  name=""
-            class="form-control" placeholder="Segundo Apellido *" type="text">
+            class="form-control" placeholder="Second surname *" type="text">
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-address-book"></i> </span>
           </div>
           <input formControlName="address" id="address" name="" class="form-control"
-            placeholder="Dirección Exacta *" type="text">
+            placeholder="Adress *" type="text">
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
           </div>
           <input formControlName="email" id="email" name="" class="form-control"
-            placeholder="Correo Electrónico *" type="email">
+            placeholder="Email *" type="email">
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
@@ -54,7 +54,7 @@
             <option value="1">+506</option>
           </select>
           <input formControlName="phone" id="phone" name="" class="form-control"
-            placeholder="Contacto Principal *" type="number" min="0" required>
+            placeholder="Principal contact *" type="number" min="0" required>
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
@@ -64,7 +64,7 @@
             <option value="1">+506</option>
           </select>
           <input formControlName="secondcontact" id="secondcontact"  name=""
-            class="form-control" placeholder="Segundo Contacto " type="number" min="0" required>
+            class="form-control" placeholder="Second contact " type="number" min="0" required>
         </div>
 
         <div class="form-group input-group">
@@ -72,11 +72,11 @@
             <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
           </div>
           <input formControlName="password" id="password" class="form-control"
-            placeholder="Crear Contraseña *" type="password">
+            placeholder="Create password *" type="password">
         </div>
 
         <div class="form-group input-group">
-          <label for="">Seleccione sus servicios:</label>
+          <label for="">Select our services:</label>
           <hr>
         </div>
 
@@ -85,20 +85,20 @@
           <div class="form-check m-1">
             <input formControlName="telephone" class="form-check-input" type="checkbox" id="telephone">
             <label class="form-check-label" for="telephone">
-              Teléfono
+              Phone
             </label>
           </div>
           <div class="form-check m-1">
             <input formControlName="mobilephone" class="form-check-input" type="checkbox" id="mobilephone">
             <label class="form-check-label" for="mobilephone">
-              Celular
+              Cell phone
             </label>
           </div>
 
           <div class="form-check m-1">
             <input formControlName="television" class="form-check-input" type="checkbox" id="television">
             <label class="form-check-label" for="television">
-              Cable
+              TV
             </label>
           </div>
 
@@ -109,16 +109,16 @@
             </label>
           </div>
           <div *ngIf="!serviceValid" class="form-check m-1 btn btn-outline-danger">
-            Seleccione al menos un servicio
+            Select at least one service
           </div>
         </div>
 
 
         <hr>
         <div class="form-group">
-          <button type="submit" class="btn btn-info btn-block"> Crear Cuenta </button>
+          <button type="submit" class="btn btn-info btn-block"> Sing up </button>
         </div>
-        <p class="text-center">¿Ya tienes cuenta? <a href="" routerLink="/login">Ingresar</a> </p>
+        <p class="text-center">Already have an Account?<a href="" routerLink="/login">Log in</a> </p>
       </form>
     </article>
   </div>

@@ -2,7 +2,7 @@
 <div class="container mt-5">
   <div class="card bg-light">
     <article class="card-body mx-auto" style="max-width: 400px;">
-      <h4 class="card-title mt-3 text-center">Solicitud de Soporte</h4>
+      <h4 class="card-title mt-3 text-center">Support request</h4>
       <hr>
       <form autocomplete="off" [formGroup]="issueForm" (ngSubmit)="registerIssue()">
 
@@ -39,7 +39,7 @@
             <span class="input-group-text"> <i class="fa fa-text-width" aria-hidden="true"></i> </span>
           </div>
           <textarea [class.is-invalid]="valueNoValid('description')" formControlName="description" class="form-control"
-            placeholder="Descripción" type="text">
+            placeholder="Description" type="text">
 
                     </textarea>
         </div>
@@ -50,16 +50,16 @@
             </span>
           </div>
           <select formControlName="service" class="custom-select">
-            <option value='0'>Seleccione un servicio</option>
-            <option *ngIf="client.telephone == 1" value="Telefonía fija">Telefonía fija</option>
-            <option *ngIf="client.mobilephone == 1" value="Telefonía móvil">Telefonía móvil</option>
-            <option *ngIf="client.television == 1" value="Cable">Cable</option>
+            <option value='0'>Select a service</option>
+            <option *ngIf="client.telephone == 1" value="Telefonía fija">Landline telephony</option>
+            <option *ngIf="client.mobilephone == 1" value="Telefonía móvil">Mobile telephony</option>
+            <option *ngIf="client.television == 1" value="Cable">TV</option>
             <option *ngIf="client.internet == 1" value="Internet">Internet</option>
           </select>
         </div>
         <hr>
         <div class="form-group">
-          <button type="submit" class="btn btn-info btn-block"> Crear Solicitud </button>
+          <button type="submit" class="btn btn-info btn-block"> Create request </button>
         </div>
       </form>
     </article>

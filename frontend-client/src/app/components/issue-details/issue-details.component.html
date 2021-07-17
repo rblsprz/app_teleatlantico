@@ -1,6 +1,6 @@
 <app-nav-bar></app-nav-bar>
 <div class="container mt-5">
-  <h4 class="card-title mt-3 text-center">Detalles de Solicitud</h4>
+  <h4 class="card-title mt-3 text-center">Request details</h4>
   <hr>
   <div *ngIf="!issue" class="loader">Loading...</div>
   <div *ngIf="issue" class="row">
@@ -8,36 +8,36 @@
       <section>
         <ul class="list-group list-group-horizontal">
           <li class="list-group-item">
-            <strong>Fecha:</strong>
+            <strong>Date:</strong>
           </li>
           <li class="list-group-item">{{ issue.creationdate | date}}</li>
         </ul>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item"><strong>Servicio:</strong></li>
+          <li class="list-group-item"><strong>Service:</strong></li>
           <li class="list-group-item">{{ issue.service}}</li>
         </ul>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item"> <strong>Descripción:</strong></li>
+          <li class="list-group-item"> <strong>Description:</strong></li>
           <li class="list-group-item">{{ issue.description}}</li>
         </ul>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item"> <strong>Estado:</strong> </li>
+          <li class="list-group-item"> <strong>Condition:</strong> </li>
           <li class="list-group-item">{{ issue.status}}</li>
         </ul>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item"> <strong>Número de reporte:</strong> </li>
+          <li class="list-group-item"> <strong>Report #:</strong> </li>
           <li class="list-group-item">{{ issue.reportnumber}}</li>
         </ul>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item"> <strong>Dirección:</strong> </li>
+          <li class="list-group-item"> <strong>Adress:</strong> </li>
           <li class="list-group-item">{{ issue.address}}</li>
         </ul>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item"> <strong>Correo:</strong> </li>
+          <li class="list-group-item"> <strong>Email:</strong> </li>
           <li class="list-group-item">{{ issue.contactemail}}</li>
         </ul>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item"> <strong>Contacto:</strong> </li>
+          <li class="list-group-item"> <strong>Contact:</strong> </li>
           <li class="list-group-item">{{ issue.contactphone}}</li>
         </ul>
       </section>
@@ -46,7 +46,7 @@
     <div class="col-6">
       <ul class="list-group list-group-horizontal">
         <li class="list-group-item">
-          <strong>Comentarios:</strong>
+          <strong>Comments:</strong>
         </li>
         <ng-template ngFor let-item [ngForOf]="comments" let-i="index">
           <li style="font-size: small;" class="list-group-item">{{comments[i].description}}
@@ -58,16 +58,16 @@
           <div class="form-group input-group">
             <label for="">
               <strong class="m-1">
-                Agregar comentario:
+                Add comment:
               </strong>
             </label>
             <div class="input-group-prepend">
               <span class="input-group-text"> <i class="fa fa-text-width" aria-hidden="true"></i> </span>
             </div>
             <form autocomplete="off" [formGroup]="commentForm" (ngSubmit)="registerComment()">
-              <textarea formControlName="description" class="form-control" placeholder="Descripción" type="text">
+              <textarea formControlName="description" class="form-control" placeholder="Description" type="text">
                             </textarea>
-              <button type="submit" class="btn btn-info btn-sm"> Agregar </button>
+              <button type="submit" class="btn btn-info btn-sm"> Add </button>
             </form>
 
           </div>
