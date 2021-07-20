@@ -72,7 +72,7 @@ export class RegisterComponent implements OnInit {
 
     this.clientService.addClient(this.newClient)
     .subscribe( resp =>{
-        this.modal('/login','Registro Exitoso')
+        this.modal('/login','Successful registration')
     });
   }
 

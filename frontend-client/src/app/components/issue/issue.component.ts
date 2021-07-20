@@ -21,7 +21,7 @@ export class IssueComponent implements OnInit {
     address : this.client.address,    
     contactphone : this.client.phone,
     contactemail : this.client.email,
-    status : 'Ingresado', 
+    status : 'Joined', 
     supportuserasigned : '',    
     service :[0,[ Validators.required]],  
     description : ['',[ Validators.required]],
@@ -55,7 +55,7 @@ export class IssueComponent implements OnInit {
     this.issueService.addIssue(this.issueForm.value)
     .subscribe( resp =>{
      
-        this.modal('','Registro Exitoso');
+        this.modal('','Successful registration');
         this.issueForm.get('description').setValue('');
         this.issueForm.get('service').setValue(0);
         this.issueForm.get('reportnumber').setValue(this.newReportNumber());

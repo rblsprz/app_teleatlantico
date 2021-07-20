@@ -29,7 +29,7 @@ export class CommentService {
 
   addComment( comment: Comment ){
     const url = `${base_url}/comment/add`;
-    console.log("comentario agregado");
+    console.log("Comment added");
     return this.http.post<any>(url, JSON.stringify(comment), httpOptions)
     .pipe(
       map(this.extractData),

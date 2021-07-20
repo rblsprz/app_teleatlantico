@@ -45,9 +45,9 @@ export class LoginComponent implements OnInit {
     .subscribe( client =>{
        if(client)   {
         this.client = client;
-        this.modal('/home','Bienvenido: '+ (this.client.name).toUpperCase() +' '+(this.client.firstsurname).toUpperCase());
+        this.modal('/home','Welcome: '+ (this.client.name).toUpperCase() +' '+(this.client.firstsurname).toUpperCase());
        }else{
-        this.modal('','Error al autentificar')
+        this.modal('','Failed to authenticate')
        }
     });
   }
