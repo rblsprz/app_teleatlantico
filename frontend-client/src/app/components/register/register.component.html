@@ -7,7 +7,7 @@
 
 <div class="container">
   <div class="card bg-light">
-    <article class="card-body mx-auto" style="max-width: 400px;">
+    <article class="card-body mx-auto" style="max-width: 400px;" style="background-color: #8ed8f8;">
       <h4 class="card-title mt-3 text-center"></h4>
       <hr>
       <form autocomplete="off" [formGroup]="registerForm" (ngSubmit)="createUser()">
@@ -108,6 +108,8 @@
               Internet
             </label>
           </div>
+          
+          
           <div *ngIf="!serviceValid" class="form-check m-1 btn btn-outline-danger">
             Select at least one service
           </div>
@@ -116,7 +118,7 @@
 
         <hr>
         <div class="form-group">
-          <button type="submit" class="btn btn-info btn-block"> Sing up </button>
+          <button type="submit" class="btn btn-info btn-block" style="background-color: #0b4368;"> Sing up </button>
         </div>
         <p class="text-center">Already have an Account?<a href="" routerLink="/login">Log in</a> </p>
       </form>
