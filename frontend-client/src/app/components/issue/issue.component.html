@@ -2,7 +2,7 @@
 <div class="container mt-5">
   <div class="card bg-light">
     <article class="card-body mx-auto" style="max-width: 400px;" style="background-color: #8ed8f8;">
-      <h4 class="card-title mt-3 text-center">Support request</h4>
+      <h4 class="card-title mt-3 text-center">Support Request</h4>
       <hr>
       <form autocomplete="off" [formGroup]="issueForm" (ngSubmit)="registerIssue()">
 
@@ -50,7 +50,7 @@
             </span>
           </div>
           <select formControlName="service" class="custom-select">
-            <option value='0'>Select a service</option>
+            <option value='0'>Select a Service</option>
             <option *ngIf="client.telephone == 1" value="Telefonía fija">Landline telephony</option>
             <option *ngIf="client.mobilephone == 1" value="Telefonía móvil">Mobile telephony</option>
             <option *ngIf="client.television == 1" value="Cable">TV</option>
@@ -59,7 +59,8 @@
         </div>
         <hr>
         <div class="form-group">
-          <button type="submit" class="btn btn-info btn-block" style="background-color: #0b4368;"> Create request </button>
+          <button type="submit" class="btn btn-info btn-block" style="background-color: #0b4368;"> Create Request
+          </button>
         </div>
       </form>
     </article>

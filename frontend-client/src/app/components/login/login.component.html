@@ -1,36 +1,38 @@
 <article class="mb-3" style="background-color: #8ed8f8;">
-    <div class="card-body text-center" style="background-color: #8ed8f8;">
-        <h3 class="text-white mt-3 blk"> Log in </h3>
-    </div>
-    <br><br>
+  <div class="card-body text-center" style="background-color: #8ed8f8;">
+    <h3 class="text-white mt-3 blk"> Login </h3>
+  </div>
+  <br><br>
 </article>
 
 <div class="container mt-5">
-    <div class="card bg-light" style="background-color: #8ed8f8;">
-        <article class="card-body mx-auto" style="max-width: 400px;" style="background-color: #8ed8f8;">
-            <h4 class="card-title mt-3 text-center"></h4>
-            <hr>
-            <form autocomplete="off" [formGroup]="loginForm" (ngSubmit)="loginUser()">
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fas fa-user"></i> </span>
-                    </div>
-                    <input id="email" [class.is-invalid]="valueNoValid('email')" class="form-control" formControlName="email" placeholder="Email" type="email">
-                </div>
+  <div class="card bg-light" style="background-color: #8ed8f8;">
+    <article class="card-body mx-auto" style="max-width: 400px;" style="background-color: #8ed8f8;">
+      <h4 class="card-title mt-3 text-center"></h4>
+      <hr>
+      <form autocomplete="off" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fas fa-user"></i> </span>
+          </div>
+          <input id="email" [class.is-invalid]="valueNoValid('email')" class="form-control" formControlName="email"
+            placeholder="Email" type="email">
+        </div>
 
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                    </div>
-                    <input id="password" [class.is-invalid]="valueNoValid('password')" formControlName="password" class="form-control" placeholder="Password" type="password">
-                </div>
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+          <input id="password" [class.is-invalid]="valueNoValid('password')" formControlName="password"
+            class="form-control" placeholder="Password" type="password">
+        </div>
 
-                <hr>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-info btn-block" style="background-color: #0b4368;"> Log in  </button>
-                </div>
-                <p class="text-center">Already have an Account? <a routerLink="/register" href="">Sign up</a> </p>
-            </form>
-        </article>
-    </div>
+        <hr>
+        <div class="form-group">
+          <button type="submit" class="btn btn-info btn-block" style="background-color: #0b4368;"> Login </button>
+        </div>
+        <p class="text-center"><a routerLink="/register" href="">Sign Up</a> </p>
+      </form>
+    </article>
+  </div>
 </div>

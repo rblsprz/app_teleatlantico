@@ -1,6 +1,6 @@
 <app-nav-bar></app-nav-bar>
 <div class="container mt-5">
-  <h4 class="card-title mt-3 text-center">Request details</h4>
+  <h4 class="card-title mt-3 text-center">Request Details</h4>
   <hr>
   <div *ngIf="!issue" class="loader">Loading...</div>
   <div *ngIf="issue" class="row">
@@ -25,11 +25,11 @@
           <li class="list-group-item">{{ issue.status}}</li>
         </ul>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item"> <strong>Report #:</strong> </li>
+          <li class="list-group-item"> <strong>Report Number:</strong> </li>
           <li class="list-group-item">{{ issue.reportnumber}}</li>
         </ul>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item"> <strong>Adress:</strong> </li>
+          <li class="list-group-item"> <strong>Address:</strong> </li>
           <li class="list-group-item">{{ issue.address}}</li>
         </ul>
         <ul class="list-group list-group-horizontal">
@@ -58,7 +58,7 @@
           <div class="form-group input-group">
             <label for="">
               <strong class="m-1">
-                Add comment:
+                Add Comment:
               </strong>
             </label>
             <div class="input-group-prepend">

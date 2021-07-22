@@ -1,6 +1,6 @@
 <article class="mb-3" style="background-color: #8ed8f8;">
   <div class="card-body text-center">
-    <h3 class="text-white mt-3 blk"> Sing up </h3>
+    <h3 class="text-white mt-3 blk"> Sign Up </h3>
   </div>
   <br><br>
 </article>
@@ -15,36 +15,34 @@
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
           </div>
-          <input id="name" class="form-control" formControlName="name" name=""
-            placeholder="Name *" type="text">
+          <input id="name" class="form-control" formControlName="name" name="" placeholder="Name *" type="text">
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
           </div>
-          <input formControlName="firstsurname" id="firstsurname" name=""
-            class="form-control" placeholder="Surname *" type="text">
+          <input formControlName="firstsurname" id="firstsurname" name="" class="form-control" placeholder="Surname *"
+            type="text">
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
           </div>
-          <input formControlName="secondsurname" id="secondsurname"  name=""
-            class="form-control" placeholder="Second surname *" type="text">
+          <input formControlName="secondsurname" id="secondsurname" name="" class="form-control"
+            placeholder="Second Surname *" type="text">
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-address-book"></i> </span>
           </div>
-          <input formControlName="address" id="address" name="" class="form-control"
-            placeholder="Adress *" type="text">
+          <input formControlName="address" id="address" name="" class="form-control" placeholder="Address *"
+            type="text">
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
           </div>
-          <input formControlName="email" id="email" name="" class="form-control"
-            placeholder="Email *" type="email">
+          <input formControlName="email" id="email" name="" class="form-control" placeholder="Email *" type="email">
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
@@ -53,8 +51,8 @@
           <select class="custom-select" style="max-width: 120px;">
             <option value="1">+506</option>
           </select>
-          <input formControlName="phone" id="phone" name="" class="form-control"
-            placeholder="Principal contact *" type="number" min="0" required>
+          <input formControlName="phone" id="phone" name="" class="form-control" placeholder="Principal Contact *"
+            type="number" min="0" required>
         </div>
         <div class="form-group input-group">
           <div class="input-group-prepend">
@@ -63,20 +61,20 @@
           <select class="custom-select" style="max-width: 120px;">
             <option value="1">+506</option>
           </select>
-          <input formControlName="secondcontact" id="secondcontact"  name=""
-            class="form-control" placeholder="Second contact " type="number" min="0" required>
+          <input formControlName="secondcontact" id="secondcontact" name="" class="form-control"
+            placeholder="Second Contact " type="number" min="0" required>
         </div>
 
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
           </div>
-          <input formControlName="password" id="password" class="form-control"
-            placeholder="Create password *" type="password">
+          <input formControlName="password" id="password" class="form-control" placeholder="Create Password *"
+            type="password">
         </div>
 
         <div class="form-group input-group">
-          <label for="">Select our services:</label>
+          <label for="">Select the Services:</label>
           <hr>
         </div>
 
@@ -85,13 +83,13 @@
           <div class="form-check m-1">
             <input formControlName="telephone" class="form-check-input" type="checkbox" id="telephone">
             <label class="form-check-label" for="telephone">
-              Phone
+              Telephone
             </label>
           </div>
           <div class="form-check m-1">
             <input formControlName="mobilephone" class="form-check-input" type="checkbox" id="mobilephone">
             <label class="form-check-label" for="mobilephone">
-              Cell phone
+              Phone
             </label>
           </div>
 
@@ -108,8 +106,7 @@
               Internet
             </label>
           </div>
-          
-          
+
           <div *ngIf="!serviceValid" class="form-check m-1 btn btn-outline-danger">
             Select at least one service
           </div>
@@ -118,9 +115,9 @@
 
         <hr>
         <div class="form-group">
-          <button type="submit" class="btn btn-info btn-block" style="background-color: #0b4368;"> Sing up </button>
+          <button type="submit" class="btn btn-info btn-block" style="background-color: #0b4368;"> Sign Up </button>
         </div>
-        <p class="text-center">Already have an Account?<a href="" routerLink="/login">Log in</a> </p>
+        <p class="text-center"><a href="" routerLink="/login">Login</a> </p>
       </form>
     </article>
   </div>
